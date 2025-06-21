@@ -546,11 +546,7 @@
             responseTimeText: '',
             poweredBy: {
                 text: 'Réalisé par 369lab.click',
-<<<<<<< HEAD
                 link: 'https://369lab.click/'
-=======
-                link: 'https://369lab.click'
->>>>>>> 5f251f5a3f800deb0df0a54a43b2a72f6071c23d
             }
         },
         style: {
@@ -637,11 +633,8 @@
         <div class="chat-body">
             <div class="chat-messages"></div>
             <div class="chat-controls">
-<<<<<<< HEAD
                 <textarea class="chat-textarea" placeholder="Tapez votre message ici..." rows="1"></textarea>
-=======
                 <textarea class="chat-textarea" placeholder="Tapez vos questions ici..." rows="1"></textarea>
->>>>>>> 5f251f5a3f800deb0df0a54a43b2a72f6071c23d
                 <button class="chat-submit">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 2L11 13"></path>
