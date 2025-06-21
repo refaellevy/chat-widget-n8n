@@ -545,8 +545,8 @@
             welcomeText: '',
             responseTimeText: '',
             poweredBy: {
-                text: 'Réalisé pour Hemera Avocats',
-                link: 'https://www.hemera-avocats.fr'
+                text: 'Réalisé par 369lab.click',
+                link: 'https://369lab.click/'
             }
         },
         style: {
@@ -615,15 +615,15 @@
             <form class="registration-form">
                 <div class="form-field">
                     <label class="form-label" for="chat-user-name">Name</label>
-                    <input type="text" id="chat-user-name" class="form-input" placeholder="Your name" required>
+                    <input type="text" id="chat-user-name" class="form-input" placeholder="Votre nom" required>
                     <div class="error-text" id="name-error"></div>
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="chat-user-email">Email</label>
-                    <input type="email" id="chat-user-email" class="form-input" placeholder="Your email address" required>
+                    <input type="email" id="chat-user-email" class="form-input" placeholder="Votre email" required>
                     <div class="error-text" id="email-error"></div>
                 </div>
-                <button type="submit" class="submit-registration">Continue to Chat</button>
+                <button type="submit" class="submit-registration">Continuez pour discuter</button>
             </form>
         </div>
     `;
@@ -633,7 +633,7 @@
         <div class="chat-body">
             <div class="chat-messages"></div>
             <div class="chat-controls">
-                <textarea class="chat-textarea" placeholder="Type your message here..." rows="1"></textarea>
+                <textarea class="chat-textarea" placeholder="Tapez votre message ici..." rows="1"></textarea>
                 <button class="chat-submit">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 2L11 13"></path>
@@ -737,17 +737,17 @@
         let isValid = true;
         
         if (!name) {
-            nameError.textContent = 'Please enter your name';
+            nameError.textContent = 'Merci de renseigner votre nom';
             nameInput.classList.add('error');
             isValid = false;
         }
         
         if (!email) {
-            emailError.textContent = 'Please enter your email';
+            emailError.textContent = 'Merci de renseigner votre mail';
             emailInput.classList.add('error');
             isValid = false;
         } else if (!isValidEmail(email)) {
-            emailError.textContent = 'Please enter a valid email address';
+            emailError.textContent = 'Merci de mettre un mail valide';
             emailInput.classList.add('error');
             isValid = false;
         }
@@ -860,7 +860,7 @@
             // Show error message
             const errorMessage = document.createElement('div');
             errorMessage.className = 'chat-bubble bot-bubble';
-            errorMessage.textContent = "Sorry, I couldn't connect to the server. Please try again later.";
+            errorMessage.textContent = "Désolé, je n'ai pas pu me connecter au serveur. Veuillez réessayer ultérieurement..";
             messagesContainer.appendChild(errorMessage);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
@@ -928,7 +928,7 @@
             // Show error message
             const errorMessage = document.createElement('div');
             errorMessage.className = 'chat-bubble bot-bubble';
-            errorMessage.textContent = "Sorry, I couldn't send your message. Please try again.";
+            errorMessage.textContent = "Désolé, je n'ai pas pu me connecter au serveur. Veuillez réessayer ultérieurement..";
             messagesContainer.appendChild(errorMessage);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } finally {
