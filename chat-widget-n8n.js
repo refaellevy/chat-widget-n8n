@@ -545,8 +545,8 @@
             welcomeText: '',
             responseTimeText: '',
             poweredBy: {
-                text: 'Réalisé pour Hemera Avocats',
-                link: 'https://www.hemera-avocats.fr'
+                text: 'Réalisé par 369lab.click',
+                link: 'https://369lab.click'
             }
         },
         style: {
